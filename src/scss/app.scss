@@ -1,0 +1,42 @@
+/*------------------------------
+| Layout
+------------------------------*/
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        width: 80%;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 70%;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 1000px;
+    }
+}
+table {
+    margin: 0 auto;
+
+    thead th {
+        background-color: #75D701;
+        color: #fff;
+    }
+    &#sell {
+        thead th {
+            background-color: #ff7761;
+        }
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    th[scope='row'] {
+        text-align: left;
+    }
+
+}
