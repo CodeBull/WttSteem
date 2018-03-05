@@ -1,24 +1,39 @@
-/*------------------------------
-| Layout
-------------------------------*/
+html, body {
+    font-family: 'Roboto', sans-serif;
+    color: #383A3F;
+}
+a {
+    color: #F68657;
+}
 .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 10px;
     margin: 0 auto;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
-        width: 80%;
-    }
-    @media screen and (min-width: 1024px) {
-        width: 70%;
-    }
     @media screen and (min-width: 1280px) {
+        width: 90%;
+    }
+    @media screen and (min-width: 1600px) {
         width: 80%;
     }
 }
-table {
+.footer {
+    padding-top: 40px;
+    color: #566270;
+}
+.small {
+    font-size: 85%;
+}
+.disclaimer {
+    width: 100%;
     margin: 0 auto;
+
+    @media screen and (min-width: 1024px) {
+        width: 70%;
+    }
+}
+table {
+    margin: 30px auto;
 
     thead tr {
         background-color: #75D701;
@@ -39,4 +54,9 @@ table {
         text-align: left;
     }
 
+}
+@media screen and (max-width: 520px) {
+    .hidden-sm {
+        display: none;
+    }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WTT STEEM</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
     <![endif]-->
@@ -15,17 +16,19 @@
 </head>
 <body>
     <div class="container">
+        <h1>Where to Trade STEEM</h1>
         <div class="pure-g">
-            <div class="pure-u-1 pure-u-sm-1-2">
-                <h1>For buying STEEM:</h1>
+            <div class="pure-u-1 pure-u-xl-1-2">
+                <h2>For buying STEEM</h2>
+                <p><small>Amunt you have to spend in SBD</small></p>
                 <table class="table" id="buy">
                     <thead>
                         <tr>
                             <th scope="col">Market</th>
                             <th scope="col">SBD/STEEM</th>
                             <th scope="col">10 STEEM</th>
-                            <th scope="col">50 STEEM</th>
-                            <th scope="col">100 STEEM</th>
+                            <th scope="col" class="hidden-sm">50 STEEM</th>
+                            <th scope="col" class="hidden-sm">100 STEEM</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -33,36 +36,37 @@
                             <th scope="row">Steem Market</th>
                             <td id="steemit_buy">Loading...</td>
                             <td id="steemit_buy_10">Loading...</td>
-                            <td id="steemit_buy_50">Loading...</td>
-                            <td id="steemit_buy_100">Loading...</td>
+                            <td id="steemit_buy_50" class="hidden-sm">Loading...</td>
+                            <td id="steemit_buy_100" class="hidden-sm">Loading...</td>
                         </tr>
                         <tr>
                             <th scope="row">Blocktrades</th>
                             <td id="blocktrades_buy">Loading...</td>
                             <td id="blocktrades_buy_10">Loading...</td>
-                            <td id="blocktrades_buy_50">Loading...</td>
-                            <td id="blocktrades_buy_100">Loading...</td>
+                            <td id="blocktrades_buy_50" class="hidden-sm">Loading...</td>
+                            <td id="blocktrades_buy_100" class="hidden-sm">Loading...</td>
                         </tr>
                         <tr>
                             <th scope="row">Bittrex</th>
                             <td id="bittrex_buy">Loading...</td>
                             <td id="bittrex_buy_10">Loading...</td>
-                            <td id="bittrex_buy_50">Loading...</td>
-                            <td id="bittrex_buy_100">Loading...</td>
+                            <td id="bittrex_buy_50" class="hidden-sm">Loading...</td>
+                            <td id="bittrex_buy_100" class="hidden-sm">Loading...</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="pure-u-1 pure-u-sm-1-2">
-                <h1>For selling STEEM:</h1>
+            <div class="pure-u-1 pure-u-xl-1-2">
+                <h2>For selling STEEM</h2>
+                <p><small>Amount you will get in SBD</small></p>
                 <table class="table" id="sell">
                     <thead>
                         <tr>
                             <th scope="col">Market</th>
                             <th scope="col">SBD/STEEM</th>
                             <th scope="col">10 STEEM</th>
-                            <th scope="col">50 STEEM</th>
-                            <th scope="col">100 STEEM</th>
+                            <th scope="col" class="hidden-sm">50 STEEM</th>
+                            <th scope="col" class="hidden-sm">100 STEEM</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -70,27 +74,32 @@
                             <th scope="row">Steem Market</th>
                             <td id="steemit_sell">Loading...</td>
                             <td id="steemit_sell_10">Loading...</td>
-                            <td id="steemit_sell_50">Loading...</td>
-                            <td id="steemit_sell_100">Loading...</td>
+                            <td id="steemit_sell_50" class="hidden-sm">Loading...</td>
+                            <td id="steemit_sell_100" class="hidden-sm">Loading...</td>
                         </tr>
                         <tr>
                             <th scope="row">Blocktrades</th>
                             <td id="blocktrades_sell">Loading...</td>
                             <td id="blocktrades_sell_10">Loading...</td>
-                            <td id="blocktrades_sell_50">Loading...</td>
-                            <td id="blocktrades_sell_100">Loading...</td>
+                            <td id="blocktrades_sell_50" class="hidden-sm">Loading...</td>
+                            <td id="blocktrades_sell_100" class="hidden-sm">Loading...</td>
                         </tr>
                         <tr>
                             <th scope="row">Bittrex</th>
                             <td id="bittrex_sell">Loading...</td>
                             <td id="bittrex_sell_10">Loading...</td>
-                            <td id="bittrex_sell_50">Loading...</td>
-                            <td id="bittrex_sell_100">Loading...</td>
+                            <td id="bittrex_sell_50" class="hidden-sm">Loading...</td>
+                            <td id="bittrex_sell_100" class="hidden-sm">Loading...</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+
+        <footer class="footer">
+            <p class="small disclaimer">Disclaimer: The Information on this web page is provided for education and informational purposes only, without any express or implied warranty of any kind, including warranties of accuracy, completeness, or fitness for any particular purpose. The Information contained in or provided from or through this website is not intended to be and does not constitute financial advice, investment advice, trading advice or any other advice. You should not make any decision, financial, investment, trading or otherwise, based on any of the information presented on this website without undertaking independent due diligence and consultation with a professional broker or financial advisory.</p>
+            <p>presented to you by <a href="https://steemit.com/@reazuliqbal">@reazuliqbal</a></p>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
