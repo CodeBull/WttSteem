@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1000px;
+    width: 80%;
   }
 }
 
@@ -30,12 +30,12 @@ table {
   margin: 0 auto;
 }
 
-table thead th {
+table thead tr {
   background-color: #75D701;
   color: #fff;
 }
 
-table#sell thead th {
+table#sell thead tr {
   background-color: #ff7761;
 }
 
